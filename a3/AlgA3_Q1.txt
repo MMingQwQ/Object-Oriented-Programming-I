@@ -1,0 +1,33 @@
+AlgA3_Q1 Simple Brilliant Mind Game Jackpot Program
+1. Variable and constant declarations
+   Note: Using array to store the values in the table. 
+         int count1 = 0; // count the amount of the numbers that are not multiple of the category number;
+		 int count2 = 0; // count the amount of the numbers that are multiple of the category number;
+		
+2. Display a welcome/salutation message to the user of the program.
+
+3. Display a prompt message for the user to enter a valid age by using Do-While Loop
+   If the age is less equal to 15 or over equal to 125, the loop continue, otherwise, the loop stops.
+   Check the value until it is satisfied - higher than 15 and less than 125 years. 
+   
+4. Process for each category the numbers in its score value that are NOT multiple of that category number.
+   Using Nested loop to archive this goal:
+   		a) Outer For-loop to iterate the scoreValue in the table. 
+   		The time of iteration should be the amount of category which is 10;
+   		
+   		b) Inner nested For-loop to find for each category the numbers, the numbers that are NOT multiple of that category number.
+   		The time of iteration should be the number of that category score value.
+   		
+   		In the inner For-Loop, display for each category the numbers that are not the multiple of the current
+   		category number, in the form of ten numbers per line, followed by the accumulated reward Cryptom money.
+   		
+   			1) Use variable count1 to count the amount of the numbers that are not multiple of the category number;
+   			If count1 is equal to 10, then print the number in a new line
+   
+   			2) Use variable count2 to count the amount of the numbers that are multiple of the category number;
+   			If count1 is equal to 0 and count2 is not equal to 0, then print "No numbers are found in this category!" 
+   		
+   			Every time when there is a number that are not multiple of the category number, add it to the sum, 
+   			then in the second loop print the sum as Cryptom money.
+   
+5. Finally, display a complimentary-close message 

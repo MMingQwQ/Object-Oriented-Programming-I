@@ -1,0 +1,63 @@
+AlgA3_Q2 Concordia CAERP Exam Registration Program
+1. Variable and constant declarations
+   Declare 3 arrays for courseName, courseNumber and the amount of student (named student)
+   and suppose size of these arrays are 20. 
+   
+2. Display a welcome/salutation message to the user of the program.
+
+3. Display a prompt message for the user to enter all the courses;
+
+4. Using a while loop to process users input: 
+   - Using a variable called line to store user input, then as long as the input contain "-",
+   find the index of "-" in order to get the substring (0, index of "-") as courseName. 
+   - As sample shown, we also need to convert the name into Upper Case.
+   - Then, find the courseNumber as the substring (index of "-", 10) because 10 is the index of ";" for every course in the end.
+   - In the end, line will be assigned as line.substring(11) in order to get ride of the course that has been recorded. 
+   - For the last course which does not end with ";", by that time length should be equal to 10. 
+   - Performing the similar thing: CourseName would be line.substring(0,6).toUpperCase() and course number would be line.substring(7).
+   - Updating the line as the empty string in order to terminate the line;
+   
+5. Display a prompt message to the user for a menu choice.
+
+6. Display a prompt message for the choice;
+
+7. Using a Nested while loop to check choice's validity and process different requests accordingly
+   - Firstly, the inner loop check the choice that is not "0", which means it should be "1", "2", "3", or "4"
+     * Using a while loop as condition is boolean choiceCheck which is true. 
+     * As long as the choice is not equal to  "1", or "2" or "3" or "4", choiceCheck remains true, 
+     then prompt user the message to enter choice again and again. Otherwise choiceCheck become false, while loop for first choice checking terminate.
+   - Secondly, the outer while loop check to make sure the choice is not "0". Once the choice is "0", the loop will terminate. 
+   - Thirdly, using if statement to process user's input accordingly.
+   
+8. For choice equals  "1": 
+   - Display the courseName and courseNumber by using a for loop in the form as sample shown. 
+   - At the end, display the prompt choice message and get user's input again. 
+   
+9. For choice equals "2": 		
+   - Display a message for users to enter the course name that they want to add student to;
+   - Using a for loop to search inside the courseName array:
+       * If the course name that user entered is equal to courseName[j], then display a message to show adding student successfully. 
+       * Inside the loop as increase (integer) checklist every time finding a coordinate name.
+   _ If checklist is equal to 0, which mean there is no corresponding name, then display a message to show the course doesn't exist. 
+   - At the end, display the prompt choice message and get user's input again.
+  
+10. For choice equals "3":
+   - Display a message for users to enter a NEW list of courses to add to the ACSD
+   - Doing the same thing as beginning (same algorithm as step 4)
+   - Display a message to show new courses have been successfully added.
+   - At the end, display the prompt choice message and get user's input again.
+
+11. For choice equals "4":
+   - Using nested for loop, check each element in array from beginning to end to rearrange 
+     the value of element in array from largest to smallest. 
+     (Bubble sort) Compare the current element with the next element, if current element is smaller than the next element, then swap them. 
+   - The outer for loop is to make sure traveling from the first element to the end.
+   - The inner for loop is to compare each current element with next increased element. 
+       * If current student[j] < student [k] (next value of student[]), using a temporary variable to store the smaller value student[j],
+       assign student[k] (the larger value) to student[j], then assign the value in temporary variable to student[k]. 
+       * In this way, the larger value move forward. Doing the same step for courseName and courseNumber correspondingly. 
+       * If current student[j] == student[k] (next value of student[]),which is shown in sample if the amount of student are all 0:
+       then inside nested for loop, doing the similar steps by comparing courseNumber from large to small to rearrange the array 
+   - Then display the rank, the amount of student (student[]), courseName, courseNumber as the form shown in the sample by using for loop.  
+   
+12. Finally, if user enter "0", kindly terminate the execution of CAERP with a compliment- close message;    
