@@ -1,6 +1,7 @@
 # Object-Oriented-Programming-I
 
 This repository contains assignments and code solutions for the Object-Oriented Programming I course (COMP248). It includes multiple assignments focusing on object-oriented principles, written in Java.
+**Type:** Individual Assignment
 
 ## Assignments
 
